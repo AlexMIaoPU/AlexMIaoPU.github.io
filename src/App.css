@@ -114,8 +114,8 @@ body {
   margin-right: auto;
 
   animation: fade linear;
-  animation-timeline: view();
-  animation-range: exit -30;
+  animation-timeline: view() !important;
+  animation-range: exit -20;
 }
 
 .divider {
