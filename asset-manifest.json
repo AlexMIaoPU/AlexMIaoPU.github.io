@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.591754cd.css",
+    "main.css": "/static/css/main.1f83d115.css",
     "main.js": "/static/js/main.593c6abc.js",
     "static/js/787.d4aba7ab.chunk.js": "/static/js/787.d4aba7ab.chunk.js",
     "static/media/kuma-wave.png": "/static/media/kuma-wave.b668dec8bc8cbda9cd53.png",
     "static/media/kuma-wave-sparkle.png": "/static/media/kuma-wave-sparkle.aa0f40e1144c9c5b7c33.png",
     "static/media/chaos.png": "/static/media/chaos.1f55bd52e17bfb88d18d.png",
     "index.html": "/index.html",
-    "main.591754cd.css.map": "/static/css/main.591754cd.css.map",
+    "main.1f83d115.css.map": "/static/css/main.1f83d115.css.map",
     "main.593c6abc.js.map": "/static/js/main.593c6abc.js.map",
     "787.d4aba7ab.chunk.js.map": "/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.591754cd.css",
+    "static/css/main.1f83d115.css",
     "static/js/main.593c6abc.js"
   ]
 }
