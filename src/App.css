@@ -169,7 +169,7 @@ Kuma bot
   height: 100vh;
 
   animation: fade-in ;
-  animation-timeline: view();
+  animation-timeline: view() !important;
   animation-range: entry 20%;
 }
 
@@ -206,7 +206,7 @@ The Project Page
   margin-right: auto;
 
   animation: enlarge;
-  animation-timeline: view();
+  animation-timeline: view() !important;
   animation-range: entry ;
 }
 
@@ -218,7 +218,7 @@ The Project Page
   font-family: 'Josefin Sans';
 
   animation: fade-in ;
-  animation-timeline: view();
+  animation-timeline: view() !important;
   animation-range: entry -20%;
 }
 
@@ -253,7 +253,7 @@ The Project Page
 
 .project-card {
   animation: enlarge;
-  animation-timeline: view();
+  animation-timeline: view() !important;
   animation-range: entry ;
 }
 
