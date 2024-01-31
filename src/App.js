@@ -9,6 +9,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  document.title = "Alex Miao"
   return (
     <div id="parent">
       <NavBar id="home-top"/>

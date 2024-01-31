@@ -168,9 +168,6 @@ Kuma bot
   justify-content: center;
   height: 100vh;
 
-  animation: fade-in ;
-  animation-timeline: view() !important;
-  animation-range: entry 20%;
 }
 
 .info-box {
@@ -178,6 +175,11 @@ Kuma bot
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 100px;
+
+  animation: fade-in linear;
+  animation-timeline: view() !important;
+  animation-range: entry !important;
 }
 
 /* 
@@ -219,7 +221,7 @@ The Project Page
 
   animation: fade-in ;
   animation-timeline: view() !important;
-  animation-range: entry -20%;
+  animation-range: entry !important;
 }
 
 #project-container {
@@ -254,7 +256,7 @@ The Project Page
 .project-card {
   animation: enlarge;
   animation-timeline: view() !important;
-  animation-range: entry ;
+  animation-range: entry -100px !important;
 }
 
 
@@ -305,8 +307,8 @@ Footer
 }
 
 @keyframes fade-in {
-  0%, 35% { opacity: 0;}
-  75% {opacity: 0.5;}
+  0%, 15% { opacity: 0;}
+  55% {opacity: 0.5;}
   100% {opacity: 1;}
 }
 
