@@ -1,0 +1,375 @@
+
+
+/*
+  Default css
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body {
+  background: #1A1C23 !important;
+  overflow-x: hidden;
+  color: #ECDBBC !important;
+  font-family: 'IBM Plex Mono' !important;
+}
+
+#parent {
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*
+  NavBar
+*/
+.navbar {
+  opacity: 1;
+  color: #ECDBBC !important;
+  position: absolute !important;
+}
+
+
+.link {
+  color: #ECDBBC !important;
+  font-size: 24px !important;
+  font-weight: 400 !important;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.brand {
+  color: #E5C92E !important;
+  font-size: 36px !important;
+}
+
+/*
+  Welcome Text
+*/
+
+.Welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+}
+
+.Welcome-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.Welcome-name {
+  font-size: 164px;
+  font-style: normal;
+  font-weight: 400;
+  color: #E5C92E !important;
+  font-family: 'Josefin Sans';
+
+}
+
+.Welcome-text-small {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  height: 164px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 30px;
+
+  animation: slide-in-bottom;
+  animation-duration: 3s;
+}
+
+.Welcome-text {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+
+  animation: slide-in-right;
+  animation-duration: 3s;
+}
+
+.Welcome-horiz-stack {
+  height: 164px;
+
+  animation: slide-in-bottom;
+  animation-duration: 3s;
+}
+
+.Welcome-links {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+  animation: fade linear;
+  animation-timeline: view();
+  animation-range: exit -30;
+}
+
+.divider {
+  width: 1px;
+  background-color: #ECDBBC;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 1cm;
+}
+
+#Email-Overlay {
+  color: #ECDBBC !important;
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  text-decoration: underline;
+}
+
+
+/*
+Kuma bot
+*/
+
+#kuma-bot {
+  position: sticky;
+  display: block;
+  margin-left: auto;
+  top: 60%;
+  right: 0%;
+  width: 122px;
+  height: 168px;
+
+  z-index: 2;
+}
+
+#overlay-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 122px;
+  height: 100%;
+
+}
+
+/*
+  Info Page
+*/
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  animation: fade-in ;
+  animation-timeline: view();
+  animation-range: entry 20%;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* 
+The Project Page
+*/
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+
+  position: relative;
+}
+
+.project-bg-img {
+  opacity: 0.1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: 100%;
+  
+  margin-left: auto;
+  margin-right: auto;
+
+  animation: enlarge;
+  animation-timeline: view();
+  animation-range: entry ;
+}
+
+#project-header {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  color: #E5C92E !important;
+  font-family: 'Josefin Sans';
+
+  animation: fade-in ;
+  animation-timeline: view();
+  animation-range: entry -20%;
+}
+
+#project-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-top: 64px;
+}
+
+.card-title {
+  font-size: 64px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  color: #E5C92E !important;
+  font-family: 'Josefin Sans' !important;
+}
+
+.card-text {
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  color: #ECDBBC !important;
+}
+
+.card-button {
+  font-family: 'Josefin Sans' !important;
+}
+
+.project-card {
+  animation: enlarge;
+  animation-timeline: view();
+  animation-range: entry ;
+}
+
+
+
+/*
+
+Footer
+
+*/
+
+.footer {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 100px;
+
+  height: 15vh;
+
+  background-color: rgb(7, 11, 24);
+}
+
+.icon-container {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 250px;
+}
+
+.icon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Some animations */
+
+@keyframes fade {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes fade-in {
+  0%, 35% { opacity: 0;}
+  75% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+@keyframes slide-in-right {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  50% {
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slide-in-bottom {
+  from {
+    margin-top: 100%;
+  }
+
+  50% {
+    margin-top: 25%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+@keyframes enlarge {
+  from {
+    transform: scale(0.4);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+
+.k-enter {
+  opacity: 0;
+  transform: scale(0.1);
+}
+.k-enter-active {
+  opacity: 0.8;
+  transform: scale(0.9);
+}
+.k-enter-done {
+  opacity: 0.8;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms ;
+}
+.k-exit {
+  opacity: 1;
+}
+.k-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms linear, transform 300ms linear;
+}
